@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   resources :friends
   root 'home#index'
   get 'home/about'
